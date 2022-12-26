@@ -1,0 +1,136 @@
+body {
+   background-image: url(../imgs/IMG_20221226_144539_190.jpg);
+   background-repeat: repeat;
+   background-attachment: fixed;
+   background-position: left center ;
+   background-size: cover ;
+    
+   
+}
+
+
+
+.loada{
+    display: flex;
+    justify-content: center;
+    margin: 50 px auto;
+}
+.loada div{
+    width: 20 px;
+    height: 20 px;
+    background-color:white;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-downa;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.loada .twoa {
+    animation-delay: 0.3s;
+}
+.loada .threea {
+    animation-delay:0.6s;
+}
+
+@keyframes up-and-downa {
+    to {
+        opacity: 0.2;
+        transform: translatey(20 px);
+    }
+}
+
+.steps {
+    
+  
+    animation-name: change-color;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes change-color {
+    0%{color: rgb(5, 10, 15);}
+    20%{color: rgb(59, 36, 6);}
+    40%{color: rgb(138, 136, 17);}
+    60%{color: rgb(233, 158, 9);}
+    80%{color: rgb(206, 82, 11);}
+    100%{color: rgb(218, 17, 17);}
+}
+.timeover{
+    background-color: rgb(210, 203, 219);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 5px solid red;
+    border-left-color: transparent;
+   
+    border-left: none;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+
+}
+@keyframes spin{
+  0%{transform: rotate(0deg);}
+  100%{transform: rotate(360deg);}
+
+}
+
+
+
+
+.loadb{
+    display: flex;
+    justify-content:center;
+    margin: 100 px auto;
+}
+.loadb div{
+    width: 20 px;
+    height: 20 px;
+    background-color:white;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation-name: up-and-downb;
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.loadb .twob {
+    animation-delay: 0.3s;
+}
+.loadb .threeb {
+    animation-delay:0.6s;
+}
+
+@keyframes up-and-downb {
+    to {
+        opacity: 0.2;
+        transform: translatey(20 px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
